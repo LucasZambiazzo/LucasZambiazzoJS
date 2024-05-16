@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermercado BSA - Inicio</title>
+    <meta name="Description" content="Supermercados BSA ofrece su servicio online a los clientes para que puedan comprar productos de primera calidad al mejor precio posible">
+    <meta name="keywords" content="SUPERMERCADO, PRODUCTOS, CALIDAD, MEJOR PRECIO">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./fotos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./fotos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./fotos/favicon-16x16.png"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Serif:ital,opsz,wdth,wght@0,8..144,50..150,100..900;1,8..144,50..150,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="contenedor">
+   <header class="header"> 
+      <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+          <img class="icononav" src="./fotos/favicon-32x32.png" alt="IconoBSA">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/CompraOnline.html">Compra Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/Ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/TarjetaSocio.html">Tarjeta Socio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nuestra Empresa
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/QuienesSomos.html">¿Quienes Somos?</a></li>
+                  <li><a class="dropdown-item" href="./pages/Contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="#">Trabaja Con Nosotros</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </header>
+
+      <main class="contenido">
+        <div class="carrusel">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active animate__pulse">
+                      <img class="imagencarrusel img-fluid" src="./fotos/Carrusel1.png" alt="ImagenOferta">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="imagencarrusel img-fluid" src="./fotos/Carrusel2.png" alt="ImagenOferta">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+
+         <div class="cards">
+         <div class="card" style="width: 18rem;">
+            <img class="imagencard" src="./fotos/cartel-super-ofertas-cadena-alrededor_658787-1029.avif" class="card-img-top" alt="SuperOfertas">
+            <div class="card-body">
+              <h5 class="card-title">¡SUPER OFERTAS!</h5>
+              <p class="card-text">No te pierdas ninguna de nuestras ofertas. ¡Los mejores productos con la mejor calidad al mejor precio siempre cerca tuyo!</p>
+              <a href="./pages/Ofertas.html" class="btn btn-primary">MÁS INFO</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="imagencard" src="./fotos/compras-online-en-supermercados-700x350.jpg" class="card-img-top" alt="CompraOnline">
+            <div class="card-body">
+              <h5 class="card-title">COMPRA ONLINE</h5>
+              <p class="card-text">¡Ahora tenes la opción de comprar todos los productos que quieras sin salir de la comodidad de tu casa en cualquier momento!</p>
+              <a href="./pages/CompraOnline.html" class="btn btn-primary">MÁS INFO</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="imagencard" src="./fotos/1537.jpg " class="card-img-top" alt="TajetaSocio">
+            <div class="card-body">
+              <h5 class="card-title">TARJETA SOCIO BSA</h5>
+              <p class="card-text" id="textoCambiante">Aprovecha los beneficios exclusivos (descuentos especiales, premios y mas) de nuestra tarjeta BSA.¡No te lo pierdas!</p>
+              <a href="./pages/TarjetaSocio.html" id="hoverLink" class="btn btn-primary">MÁS INFO</a>
+            </div>
+          </div>
+           <div class="card" style="width: 18rem;">
+            <img class="imagencard" src="./fotos/Trabajo.png " class="card-img-top" alt="Trabaja con Nosotros">
+            <div class="card-body">
+              <h5 class="card-title">CONTACTA CON NOSOTROS</h5>
+              <p class="card-text">Si tenes alguna queja, duda o sugerencia, no dudes en ponerte en contacto con nosotros</p>
+              <a href="#" class="btn btn-primary" id="contactBtn">MÁS INFO</a>
+            </div>
+          </div>
+          </div>
+
+      </main>
+      <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-section">
+              <h3>Contacto</h3>
+              <p>Dirección: [Av. Alberdi 320 y Las Heras 143]</p>
+              <p>Teléfono: 3364312691]</p>
+              <p>Email: [BSA@hotmail.com]</p>
+            </div>
+    
+            <div class="footer-section">
+              <h3>Enlaces Rápidos</h3>
+              <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li>
+                  <a href="./pages/CompraOnline.html">Catálogo de productos</a>
+                </li>
+                <li><a href="./pages/Ofertas.html">Ofertas</a></li>
+                <li><a href="./pages/QuienesSomos.html">Quienes somos</a></li>
+                <li><a href="./pages/Contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-icon">
+              <h3>Redes Sociales</h3>
+              <a href="https://www.instagram.com/" target="_blank"><img  src="./fotos/instagram.png" alt="instagram-icon" /></a>
+              <a href="https://www.facebook.com/?locale=es_LA"><img  src="./fotos/facebook.png" alt="facebook-icon" /></a>
+              <img  src="./fotos/whatsapp.png" alt="WhatsApp-icon" />
+              <img  src="./fotos/social.png" alt="Twitter-icon" />
+            </div>
+          </div>
+    
+          <div class="bottom-bar">
+            <p>&copy; 2024 Supermercado BSA. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</body>
+</html>

@@ -1,0 +1,307 @@
+$navbarcolor: burlywood;
+$font1: 'Roboto', serif;
+$font2: "Nunito Sans", sans-serif;
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#dbd8e3;
+    
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "contenido contenido contenido"
+        "footer footer footer";
+  
+    .header { grid-area: header; }
+    .contenido { grid-area: contenido; }
+    .footer { grid-area: footer; }
+}
+
+.icononav {
+    width: 40px;
+    margin: 5px;
+}
+
+.navbar {
+    background-color: $navbarcolor;
+    font-family: $font1 ;
+    font-weight: bold;
+    font-size: 18px;
+  
+    .nav-link:hover {
+        color: rgb(241, 185, 112);
+        background-color: #333;
+        border-radius: 50px;
+    }
+}
+
+.carrusel {
+    margin: 20px;
+    .carousel-inner { height: 350px; }
+    .imagencarrusel { width: 100%; height: 350px; }
+}
+
+.carruselSocio {
+    max-width: 900px; 
+    margin: auto; 
+    padding: 20px;
+}
+
+.cards {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    .card {
+        display: inline-block;
+        margin: 30px;
+        background-color: white;
+      
+        .card-title {
+          text-align: center;
+          color: rgb(241, 185, 112);
+          font-family: $font2;
+          font-weight: bold;
+        }
+      
+        .imagencard { width: 100%; height: 200px;}
+      }
+    }
+
+
+
+.btn {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    transition: scale 0.5s;
+  
+    a { text-decoration: none; }
+  
+    &:hover {
+        background-color: burlywood;
+        color: black;
+        scale: 110%;
+    }
+}
+
+
+.list-group-item {
+    background-color: beige;
+    color: black;
+    font-family: $font1;
+  
+    &:hover {
+        background-color: white;
+        color: burlywood;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+.contenedor-compra {
+    display: flex; 
+    padding: 20px; 
+}
+
+.grid-cards{
+   padding: 50px;
+
+   .contenedor-cards {
+       justify-items: center;
+       display: grid;
+       gap: 5px;
+       grid-template-columns: repeat(2, 1fr 2fr);
+       grid-template-rows: repeat(3, 1fr);
+       grid-template-areas: 
+       "menu producto producto"
+       "menu producto producto"
+       "menu producto producto"
+       ;
+      
+       .list-container{
+           grid-area: menu;
+       }
+       .card-body {
+           padding: 30px;
+        
+       }
+       
+       .btn { max-width: 100%; }
+       
+       .card-text-compra {
+           color: red;
+           font-weight: bold;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+   }
+}
+    .mainQuienes {
+        display: flex;
+        border: 1px;
+        border-color: gray;
+        border-style: dotted;
+        margin: 10px;
+        
+        .containerHistoria {
+            width: 500px;
+        margin: 40px;
+        
+      
+        .imgHistoria { width: 499px; height: 399px; }
+    }
+  
+    .imgContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    h2 { font-weight: bold; }
+  
+    .containerTexto {
+        border: 2px;
+        border-color: black;
+        border-style: solid;
+        width: 450px;
+        margin: 40px;
+        padding: 10px;
+        background-color: beige;
+        font-family: $font1;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: $font2;
+  
+    .container-footer {
+        display: flex;
+        justify-content: space-evenly;
+      
+        .footer-section {
+            width: 30%;
+            font-family: $font1;
+            font-weight: bold;
+          
+            h3 {
+                color: #fff;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+          
+            p { margin: 0; font-size: 0.9em; }
+          
+            ul {
+                list-style: none;
+                padding: 0;
+              
+                li {
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                  
+                    a:hover {
+                        color: black;
+                        
+                        
+                    }
+                }
+            }
+          
+            a { text-decoration: none; color: #fff; }
+        }
+      
+        .footer-icon img { width: 20px; margin-right: 20px; }
+    }
+  
+    .bottom-bar {
+        margin-top: 20px;
+        text-align: center;
+ 
+        
+        p { margin: 0; font-size: 0.8em; }
+    }
+}
+.contenedorSocio{
+    display: grid;
+    gap: 5px;
+    
+
+    
+    .footer { grid-area: footer; }
+    
+}
+
+.contenidoSocio{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+.item-wrap {
+    padding: 20px;
+}
+
+.form-control{
+    width: 400px;
+}
+.bodyContacto{
+    font-family: $font1;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.containerform{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin-top: 20px;
+    font-family: $font2;
+    color:black;
+    .customform {
+        max-width: 440px; 
+        width: 100%; 
+        padding: 20px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+
+        .Mensaje{
+          min-width: 400px;
+          max-width: 400px;
+          resize: vertical;
+          min-height: 150px;
+          
+        }
+      }
+      
+}
+@media (max-width: 768px) {
+    .bodyContacto {
+      grid-template-columns: 1fr;  /* Stack elements vertically on small screens */
+      grid-template-areas:
+        "header"
+        "content"
+        "sidebar"
+        "footer";
+    }
+  }

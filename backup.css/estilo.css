@@ -1,0 +1,241 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.contenedor {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "contenido contenido contenido"
+      "contenido contenido contenido"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .contenido { grid-area: contenido; }
+  
+  .footer { grid-area: footer; }
+  
+  
+
+.icononav{
+    width: 40px;
+    margin: 5px;
+}
+
+.navbar{
+    background-color:burlywood;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;   
+    font-size: 18px;
+    
+}
+.nav-link:hover{
+    color:rgb(241, 185, 112);
+    background-color: #333;
+    border-radius: 50px;
+}
+.carrusel{
+    margin: 20px;
+}
+.carousel-inner{
+    height: 250px;
+    
+}
+.imagencarrusel{
+    width: 100%;
+    height: 250px;
+}
+.cards{
+    width:auto;
+    display: flex;
+    justify-content: space-evenly	;
+}
+.card{
+    display: inline-block;
+    margin: 30px;
+    background-color:white;
+    
+}
+.card-title{
+    text-align: center;
+    color: rgb(241, 185, 112);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.imagencard{
+    width: 286px;
+    height: 200px;
+}
+.btn{
+background-color: #333;
+display: flex;
+justify-content: center;
+
+}
+a{
+    text-decoration: none;
+}
+.list-group-item{
+    background-color: beige;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.list-group-item:hover{
+    background-color: white;
+    color: burlywood;
+}
+.contenedor-compra{
+    display: flex;
+    padding: 20px;
+}
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-compra{
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+.imgcard-compra{
+    max-width: 200px;
+}
+.btn{
+    max-width: 100px;
+}
+.card-text-compra{
+    color:red;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif
+}
+.btn:hover{
+    background-color: burlywood;
+    color: black;
+}
+.mainQuienes{
+    display: flex;
+    border: 1px;
+    border-color: gray;
+    border-style:dotted;
+    margin: 10px;
+}
+.containerHistoria{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width:400px;
+    margin: 40px;
+    background-color: beige;
+}
+.imgHistoria{
+   width: 399px;
+   height: 399px;
+}
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-weight: bold;
+}
+.containerTexto{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width:450px;
+    margin: 40px;
+    padding: 10px;
+    background-color: beige;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-section {
+    width: 30%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.footer-section li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-icon img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.bottom-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bottom-bar p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:768px){
+    .contenedor{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: "header header"
+                        "carrusel carrusel"
+                        "cards cards"
+                        "cards cards"
+                        "footer footer"
+    }
+    .cards{
+        flex-direction: column	;
+    }
+    .container-footer {
+        justify-content: column;
+    }
+}

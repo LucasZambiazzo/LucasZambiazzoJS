@@ -1,0 +1,331 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbd8e3;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: row;
+  grid-template-areas: "header header header" "contenido contenido contenido" "contenido contenido contenido" "footer footer footer";
+}
+.contenedor .header {
+  grid-area: header;
+}
+.contenedor .contenido {
+  grid-area: contenido;
+}
+.contenedor .footer {
+  grid-area: footer;
+}
+
+.icononav {
+  width: 40px;
+  margin: 5px;
+}
+
+.navbar {
+  background-color: burlywood;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar .nav-link:hover {
+  color: rgb(241, 185, 112);
+  background-color: #333;
+  border-radius: 50px;
+}
+
+.carrusel {
+  margin: 20px;
+}
+.carrusel .carousel-inner {
+  height: 350px;
+}
+.carrusel .imagencarrusel {
+  width: 100%;
+  height: 350px;
+}
+
+.carruselSocio {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cards {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards .card {
+  display: inline-block;
+  margin: 30px;
+  background-color: white;
+}
+.cards .card .card-title {
+  text-align: center;
+  color: rgb(241, 185, 112);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+.cards .card .imagencard {
+  width: 100%;
+  height: 200px;
+}
+
+.btn {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  transition: scale 0.5s;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: burlywood;
+  color: black;
+  scale: 110%;
+}
+
+.list-group-item {
+  background-color: beige;
+  color: black;
+  font-family: "Roboto", serif;
+}
+.list-group-item:hover {
+  background-color: white;
+  color: burlywood;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor-compra {
+  display: flex;
+  padding: 20px;
+}
+
+.grid-cards {
+  padding: 50px;
+}
+.grid-cards .contenedor-cards {
+  justify-items: center;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "menu producto producto" "menu producto producto" "menu producto producto";
+}
+.grid-cards .contenedor-cards .list-container {
+  grid-area: menu;
+}
+.grid-cards .contenedor-cards .card-body {
+  padding: 30px;
+}
+.grid-cards .contenedor-cards .btn {
+  max-width: 100%;
+}
+.grid-cards .contenedor-cards .card-text-compra {
+  color: red;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainQuienes {
+  display: flex;
+  border: 1px;
+  border-color: gray;
+  border-style: dotted;
+  margin: 10px;
+}
+.mainQuienes .containerHistoria {
+  width: 500px;
+  margin: 40px;
+}
+.mainQuienes .containerHistoria .imgHistoria {
+  width: 499px;
+  height: 399px;
+}
+.mainQuienes .imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainQuienes h2 {
+  font-weight: bold;
+}
+.mainQuienes .containerTexto {
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 450px;
+  margin: 40px;
+  padding: 10px;
+  background-color: beige;
+  font-family: "Roboto", serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+footer .container-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .container-footer .footer-section {
+  width: 30%;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+footer .container-footer .footer-section h3 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+footer .container-footer .footer-section p {
+  margin: 0;
+  font-size: 0.9em;
+}
+footer .container-footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .container-footer .footer-section ul li {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+footer .container-footer .footer-section ul li a:hover {
+  color: black;
+}
+footer .container-footer .footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container-footer .footer-icon img {
+  width: 20px;
+  margin-right: 20px;
+}
+footer .bottom-bar {
+  margin-top: 20px;
+  text-align: center;
+}
+footer .bottom-bar p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.contenedorSocio {
+  display: grid;
+  gap: 5px;
+}
+.contenedorSocio .footer {
+  grid-area: footer;
+}
+
+.contenidoSocio {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.item-wrap {
+  padding: 20px;
+}
+
+.form-control {
+  width: 400px;
+}
+
+.bodyContacto {
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.containerform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+}
+.containerform .customform {
+  max-width: 440px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.containerform .customform .Mensaje {
+  min-width: 400px;
+  max-width: 400px;
+  resize: vertical;
+  min-height: 150px;
+}
+.carrito {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btn-remove {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-vaciar {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#total {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .bodyContacto {
+    grid-template-columns: 1fr; /* Stack elements vertically on small screens */
+    grid-template-areas: "header" "content" "sidebar" "footer";
+  }
+}
+
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "nombre": "Lata de Atún Campagnola 170gr",
+      "precio": 2200.03
+    },
+    {
+      "id": 2,
+      "nombre": "Lavandina Ayudín Triple Acción",
+      "precio": 1422.03
+    },
+    {
+      "id": 3,
+      "nombre": "Leche La Serenisima Clásica 1lts",
+      "precio": 1185.07
+    },
+    {
+      "id": 4,
+      "nombre": "La Paulina Queso Crema Tradicional",
+      "precio": 1100.00
+    },
+    {
+      "id": 5,
+      "nombre": "Yogurt de Frutilla Milkaut 1lts",
+      "precio": 1320.09
+    },
+    {
+      "id": 6,
+      "nombre": "Galletitas Oreo paquete 118grs",
+      "precio": 1247.00
+    },
+    {
+      "id": 7,
+      "nombre": "Papas Fritas Lays Clásicas 150gr",
+      "precio": 3121.00
+    }
+  ]
